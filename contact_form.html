@@ -1,0 +1,117 @@
+<!--
+  Nombre: Leopoldo Javier Suarez Baptista
+  Fecha: 28/11/2024
+  Módulo: LMSGI
+  UD: LMSGI02
+  Tarea: LMSGI02 Tarea evaluativa 2 (80%). Sitio Web.
+-->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto</title>
+    <link rel="stylesheet" href="CSS/styles_form.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header>
+        <nav class="navigation">
+            <!--
+                Barra de navegación:
+                - h1: Título principal de la página de contacto.
+                - ul: Lista de enlaces de navegación a otras páginas del sitio.
+            -->
+            <h1 class="page-title">Contacto</h1>
+            <ul>
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="dispositivos.html">Dispositivos</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main>
+        <!-- Sección del formulario -->
+        <section class="form-section">
+            <h2>Formulario</h2>
+            <!-- 
+                Información de contacto:
+                - p: Muestra el correo de contacto para consultas rápidas.
+                - form: Formulario para que el usuario complete sus datos y mensaje.
+            -->
+            <p>También puedes contactarnos directamente en <a href="mailto:leopoldosuarez98@gmail.com" class="highlight-email">leopoldosuarez98@gmail.com</a></p>
+            <form action="mailto:leopoldosuarez98@gmail.com" method="post">
+                <!-- Campos del formulario -->
+                <label for="name">Nombre:</label>
+                <input type="text" id="name" name="name" placeholder="Escribe tu nombre" required>
+                <br><br>
+
+                <label for="email">Correo:</label>
+                <input type="email" id="email" name="email" placeholder="Escribe tu correo" required>
+                <br><br>
+
+                <label for="mobile">Móvil:</label>
+                <input type="tel" id="mobile" name="mobile" placeholder="Escribe tu número móvil" required>
+                <br><br>
+
+                <!-- Selección de género -->
+                <label>Género:</label>
+                <input type="radio" id="femenino" name="genero" value="femenino" checked>
+                <label for="femenino">Femenino</label>
+                <input type="radio" id="masculino" name="genero" value="masculino">
+                <label for="masculino">Masculino</label>
+                <br><br>
+
+                <label for="subject">Tema:</label>
+                <input type="text" id="subject" name="subject" placeholder="Escribe el tema" required>
+                <br><br>
+
+                <!-- Área de texto para el mensaje -->
+                <label for="message">Descripción:</label>
+                <textarea id="message" name="message" rows="4" placeholder="Escribe tu mensaje" required></textarea>
+                <br><br>
+
+                <!-- Botón para enviar -->
+                <input type="submit" value="Enviar">
+            </form>
+        </section>
+
+        <!-- Sección lateral: Redes sociales -->
+        <aside>
+            <h2>Redes</h2>
+            <!-- 
+                Lista de enlaces a redes sociales:
+                - ul: Contenedor de los enlaces.
+                - li: Cada red social con su respectivo ícono e hipervínculo.
+            -->
+            <ul class="social-links">
+                <!--
+                    Uso de float:
+                    - Los íconos están alineados a la izquierda, y el texto fluye a la derecha para crear un diseño más limpio y dinámico.
+                -->
+                <li><a href="https://x.com/Ktuin?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img src="./Contenido multimedia/x.png" alt="Twitter" class="social-icon"> X (Twitter)</a></li>
+                <li><a href="https://www.instagram.com/ktuin_apple/?hl=es"><img src="./Contenido multimedia/ig.png" alt="Instagram" class="social-icon"> Instagram</a></li>
+                <li><a href="https://www.facebook.com/apple/?locale=es_ES"><img src="./Contenido multimedia/fb.png" alt="Facebook" class="social-icon"> Facebook</a></li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Pie de página -->
+    <footer>
+        <!-- 
+            Información sobre la autoría y licencia del contenido.
+            - Nombre del autor.
+            - Licencia Creative Commons con enlaces e íconos visuales.
+        -->
+        <a>Leopoldo Suarez</a>
+        <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" 
+            target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" 
+            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" 
+            src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" 
+            alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+             src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
+    </footer>
+</body>
+</html>

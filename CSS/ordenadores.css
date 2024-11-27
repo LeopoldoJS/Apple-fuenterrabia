@@ -1,0 +1,224 @@
+/*
+  Nombre: [Tu Nombre]
+  Fecha: [Fecha Actual]
+  Descripción: Estilos generales para una página web con estructura de encabezado,
+               contenido principal, productos y pie de página.
+*/
+
+/* GENERAL */
+
+/*
+  Reinicio básico para márgenes, relleno y box-sizing. 
+  "box-sizing: border-box" asegura que los bordes y el relleno no aumenten el tamaño del elemento.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+  Estilos básicos para el cuerpo del documento:
+  - Fuente sans-serif para mayor legibilidad.
+  - Línea de altura de 1.5 para espaciamiento adecuado entre líneas.
+  - Color de texto gris oscuro (#333) para contraste en fondo claro.
+  - Fondo gris claro (#f4f4f4) para apariencia limpia.
+*/
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* HEADER */
+
+/*
+  Estilo para el encabezado de la página:
+  - Uso de Flexbox para organizar elementos horizontalmente.
+  - Espaciado uniforme entre los elementos con "justify-content".
+  - Texto blanco sobre fondo negro para alta visibilidad.
+*/
+.header {
+    display: flex; /* Flexbox */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #000;
+    color: white;
+}
+
+/*
+  Título del encabezado:
+  - Tamaño de fuente grande y en negrita.
+*/
+.header-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+/*
+  Estilos para la navegación:
+  - Lista no ordenada con estilo de lista desactivado.
+  - Elementos alineados horizontalmente con espacio entre ellos.
+*/
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+/*
+  Estilos para los enlaces de la navegación:
+  - Sin subrayado en los enlaces.
+  - Texto blanco para contraste en el encabezado.
+*/
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+/* MAIN */
+
+/*
+  Contenedor principal del contenido:
+  - Espaciado interior uniforme.
+  - Organización vertical con separación entre bloques.
+*/
+.main {
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* PRODUCTOS */
+
+/*
+  Contenedor para cada producto:
+  - Uso de Flexbox para alinear la imagen y descripción.
+  - Espaciado uniforme entre elementos y separación inferior con borde.
+*/
+.producto {
+    display: flex; /* Flexbox */
+    align-items: flex-start;
+    gap: 1rem;
+    padding: 1rem 0;
+    border-bottom: 1px solid #ddd;
+}
+
+/*
+  Figura del producto:
+  - Organización vertical de la imagen y el texto descriptivo.
+*/
+figure {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    margin: 0;
+}
+
+/*
+  Imagen del producto:
+  - Ancho fijo de 80px para consistencia.
+  - Borde redondeado para apariencia suave.
+*/
+.producto-img {
+    width: 80px; /* Imagen fija */
+    height: auto;
+    border-radius: 5px;
+}
+
+/*
+  Texto descriptivo debajo de la imagen:
+  - Negrita y centrado.
+*/
+figcaption {
+    font-weight: bold;
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+/*
+  Contenido del producto:
+  - Organización vertical para el texto y precio.
+*/
+article {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+/*
+  Precio del producto:
+  - Negrita y color azul (#007aff) para destacar.
+*/
+.precio {
+    font-weight: bold;
+    color: #007aff;
+}
+
+/* OPINIONES */
+
+/*
+  Sección de opiniones:
+  - Fondo amarillo claro (#ffffe0) y bordes redondeados.
+  - Bordes y relleno para un diseño diferenciado.
+*/
+.opiniones {
+    background-color: #ffffe0;
+    border-radius: 10px;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+}
+
+/*
+  Título de la sección de opiniones:
+  - Tamaño de fuente grande y espaciado inferior.
+*/
+.opiniones h2 {
+    font-size: 1.75rem;
+    margin-bottom: 1rem;
+}
+
+/*
+  Texto dentro de la sección de opiniones:
+  - Tamaño de fuente moderado con separación entre párrafos.
+*/
+.opiniones p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+/* FOOTER */
+
+/*
+  Pie de página:
+  - Texto centrado con fondo negro y texto blanco.
+*/
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #000;
+    color: white;
+}
+
+/*
+  Botón de "Volver":
+  - Botón estilizado con fondo blanco, bordes redondeados y color azul.
+  - Márgenes para separación y resaltado visual.
+*/
+.btn-volver {
+    display: inline-block;
+    margin-top: 1rem;
+    background-color: white;
+    color: #007aff;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+    border: 1px solid #007aff;
+}

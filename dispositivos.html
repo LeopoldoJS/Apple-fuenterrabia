@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--
+        Configuración básica del documento:
+        - meta charset: Configuración de caracteres en UTF-8 para soportar texto en español.
+        - meta viewport: Ajusta el diseño para adaptarse a dispositivos móviles.
+        - title: Título de la página, mostrado en la pestaña del navegador.
+        - link: Conexión a la hoja de estilos CSS externa para dar formato a la página.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dispositivos</title>
+    <link rel="stylesheet" href="CSS/styles_dispositivos.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <!--
+            Encabezado de la página:
+            - h1: Título principal de la página.
+            - nav: Barra de navegación con enlaces a otras secciones del sitio.
+        -->
+        <h1 class="header-title">Dispositivos</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="contact_form.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main">
+        <!-- Sección de Novedades -->
+        <section class="lo-nuevo">
+            <!--
+                Encabezado de la sección:
+                - h2: Subtítulo que introduce la sección de novedades.
+            -->
+            <h2>Lo Nuevo</h2>
+
+            <!-- Categoría: Móviles -->
+            <article class="categoria">
+                <!-- Título de la categoría -->
+                <h3>Móviles</h3>
+                <ul class="items-grid">
+                    <!-- Primer modelo: iPhone 16 -->
+                    <li class="item">
+                        <!-- Descripción breve del dispositivo -->
+                        <p>
+                            El iPhone 16 cuenta con una pantalla Super Retina XDR OLED...
+                        </p>
+                        <!-- Imagen representativa -->
+                        <img src="./Contenido multimedia/1724531292_9110_iphone-16-jpeg.jpeg" alt="Imagen Modelo 1">
+                    </li>
+                    <!-- Segundo modelo: iPhone 16 Plus -->
+                    <li class="item">
+                        <p>
+                            El iPhone 16 Plus cuenta con una pantalla Super Retina XDR OLED...
+                        </p>
+                        <img src="./Contenido multimedia/apple_iphone_16_negro_03_ad_l.jpg" alt="Imagen Modelo 2">
+                    </li>
+                    <!-- Tercer modelo: iPhone 16 Pro y Pro Max -->
+                    <li class="item">
+                        <p>
+                            El iPhone 16 Pro y el iPhone 16 Pro Max cuentan con pantallas Super Retina XDR OLED...
+                        </p>
+                        <img src="./Contenido multimedia/iphone-16-pro-color-negro-natural-1tb.jpg" alt="Imagen Modelo 3">
+                    </li>
+                </ul>
+            </article>
+
+            <!-- Categoría: iPad -->
+            <article class="categoria">
+                <h3>iPad</h3>
+                <ul class="items-grid">
+                    <!-- Primer modelo: iPad Air -->
+                    <li class="item">
+                        <p>
+                            El iPad Air es una tableta versátil que ofrece un rendimiento impresionante...
+                        </p>
+                        <img src="./Contenido multimedia/apple-ipad-air-2024-6gen-11-128gb-wifi-m2-space-grey-ita-muwc3tya.jpg" alt="Imagen Tablet 1">
+                    </li>
+                    <!-- Segundo modelo: iPad Pro -->
+                    <li class="item">
+                        <p>
+                            El iPad Pro es una tableta de alto rendimiento que viene en dos tamaños...
+                        </p>
+                        <img src="./Contenido multimedia/ipad-pro-2024-13-inch-by-apple.jpg" alt="Imagen Tablet 2">
+                    </li>
+                </ul>
+            </article>
+
+            <!-- Categoría: Ordenadores -->
+            <article class="categoria">
+                <h3>Ordenadores</h3>
+                <ul class="items-grid">
+                    <!-- Primer modelo: MacBook Air -->
+                    <li class="item">
+                        <p>
+                            El MacBook Air es conocido por su diseño ultraligero y portátil...
+                        </p>
+                        <img src="./Contenido multimedia/macbookair.jpg" alt="Imagen Ordenador 1">
+                    </li>
+                    <!-- Segundo modelo: Mac Pro -->
+                    <li class="item">
+                        <p>
+                            El Mac Pro es una estación de trabajo de alto rendimiento que viene equipado...
+                        </p>
+                        <img src="./Contenido multimedia/Apple-MacBook-Pro-M2-Pro-and-M2-Max-hero-230117_Full-Bleed-Image.jpg.large.jpg" alt="Imagen Ordenador 2">
+                    </li>
+                </ul>
+                <!-- Botón para navegar a más dispositivos -->
+                <a href="./ordenadores.html" class="btn-volver">Más</a>
+            </article>
+        </section>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <!--
+            Información del pie de página:
+            - p: Texto con información adicional de autoría o licencia.
+        -->
+        <a>Leopoldo Suarez</a>
+        <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" 
+            target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" 
+            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" 
+            src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" 
+            alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+             src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
+    </footer>
+</body>
+</html>

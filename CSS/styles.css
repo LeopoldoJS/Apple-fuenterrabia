@@ -1,0 +1,187 @@
+/*
+  Nombre: [Tu Nombre]
+  Fecha: [Fecha Actual]
+  Descripción: Estilos para una página con encabezado, contenido principal, sección de noticias y pie de página.
+*/
+
+/* GENERAL */
+
+/*
+  Esto elimina los márgenes y rellenos predeterminados y configura un tamaño más manejable para los bordes y rellenos.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+  Aquí se define cómo será el texto de toda la página:
+  - Fuente simple (Arial) para una lectura fácil.
+  - Espaciado entre líneas para que el texto no quede tan pegado.
+  - Fondo gris claro para darle un toque limpio.
+*/
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* HEADER */
+
+/*
+  El encabezado tiene un fondo negro con texto blanco. 
+  Usamos Flexbox para alinear los elementos en una fila.
+*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #000;
+    color: white;
+}
+
+/*
+  El título del encabezado tiene un tamaño de letra más grande para destacar.
+*/
+.header-title {
+    font-size: 1.8rem;
+}
+
+/*
+  La barra de navegación no tiene viñetas y sus elementos están en una sola fila.
+  Se deja algo de espacio entre los enlaces.
+*/
+.nav ul {
+    list-style: none;
+    display: flex;
+}
+
+.nav ul li {
+    margin-left: 1.5rem;
+}
+
+/*
+  Los enlaces no tienen subrayado y el color blanco los hace destacar sobre el fondo negro.
+*/
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* MAIN CONTENT */
+
+/*
+  La sección principal tiene elementos que se organizan en varias filas si la pantalla es pequeña.
+  Se agrega espacio entre ellos con "gap".
+*/
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 2rem;
+}
+
+/*
+  Esta es la parte principal del contenido.
+  Los elementos están en varias filas y tienen espacio entre ellos.
+  La sección ocupa más espacio que el aside (flex: 2).
+*/
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    flex: 2;
+}
+
+/*
+  Cada cuadro de contenido tiene un fondo blanco, bordes redondeados y un poco de espacio interno.
+*/
+.content-box {
+    flex: 1 1 45%; /* Toma casi la mitad del ancho disponible */
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 1rem;
+    position: relative; /* Para posicionar elementos internos si es necesario */
+}
+
+/*
+  Las imágenes dentro de los cuadros de contenido se adaptan al ancho disponible.
+*/
+.imagen-reducida {
+    width: 100%;
+    height: auto;
+    margin-top: 1rem;
+}
+
+/* FLOAT: ASIDE */
+
+/*
+  Esta es una sección para noticias, que se muestra al lado derecho de la página.
+  Tiene un fondo blanco y bordes redondeados como las demás secciones.
+*/
+.news-section {
+    flex: 1; /* Ocupa menos espacio que la sección principal */
+    background: white;
+    padding: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+}
+
+/*
+  Las noticias están organizadas en dos columnas.
+  Cada noticia ocupa casi la mitad del ancho disponible y está separada de las demás.
+*/
+.news-section ul li {
+    float: left; /* Hace que las noticias estén lado a lado */
+    width: 45%;
+    margin: 0.5rem 2%; /* Espaciado alrededor de cada noticia */
+    list-style: none;
+}
+
+/*
+  Las imágenes dentro de las noticias se ajustan al tamaño del contenedor y tienen bordes redondeados.
+*/
+.news-img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* FOOTER */
+
+/*
+  El pie de página tiene un diseño sencillo: texto centrado sobre un fondo negro.
+*/
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #000;
+    color: white;
+}
+
+/* ACCESIBILIDAD */
+
+/*
+  Aquí se define el tamaño base de la fuente para que el contenido sea escalable.
+*/
+:root {
+    font-size: 16px;
+}
+
+/*
+  Los títulos secundarios tienen un tamaño más grande que los párrafos para que se noten.
+*/
+h2 {
+    font-size: 1.5rem;
+}
+
+/*
+  Los párrafos tienen un tamaño de letra moderado para facilitar la lectura.
+*/
+p {
+    font-size: 1rem;
+}

@@ -1,0 +1,208 @@
+/*
+  Nombre: [Tu Nombre]
+  Fecha: [Fecha Actual]
+  Descripción: Estilos para un sitio web con estructura de encabezado, contenido principal,
+               sección de novedades con cuadrícula de ítems y un pie de página estilizado.
+*/
+
+/* GENERAL */
+
+/*
+  Reinicio básico para márgenes y relleno. 
+  Se asegura que las dimensiones incluyan el borde y el relleno con "box-sizing".
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+  Estilos básicos para el cuerpo:
+  - Uso de fuente sans-serif para legibilidad.
+  - Línea de texto con un poco de espacio extra.
+  - Fondo gris claro (#f4f4f4) para una apariencia limpia.
+*/
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* HEADER */
+
+/*
+  Encabezado principal:
+  - Uso de Flexbox para alinear elementos horizontalmente.
+  - Colores de alto contraste: texto blanco sobre fondo negro.
+*/
+.header {
+    display: flex; /* Flexbox */
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #000;
+    color: white;
+}
+
+/*
+  Título del encabezado:
+  - Tamaño de fuente grande para destacar.
+*/
+.header-title {
+    font-size: 2rem; /* Tamaño relativo */
+}
+
+/*
+  Navegación dentro del encabezado:
+  - Eliminación de estilos por defecto de la lista.
+  - Uso de Flexbox para alinear los elementos horizontalmente con espacio entre ellos.
+*/
+.nav ul {
+    list-style: none;
+    display: flex; /* Flexbox */
+    gap: 1rem; /* Espaciado relativo */
+}
+
+/*
+  Enlaces de navegación:
+  - Sin subrayado para un diseño limpio.
+  - Texto en blanco para contraste.
+*/
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* MAIN */
+
+/*
+  Contenedor principal de contenido:
+  - Espaciado interior uniforme.
+*/
+.main {
+    padding: 2rem;
+}
+
+/* SECCIÓN "LO NUEVO" */
+
+/*
+  Contenedor para la sección de novedades:
+  - Uso de Flexbox para organizar verticalmente con separación entre bloques.
+*/
+.lo-nuevo {
+    display: flex; /* Flexbox */
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/*
+  Categorías dentro de la sección "Lo Nuevo":
+  - Fondo blanco con bordes redondeados y ligeros.
+  - Posición relativa para que elementos internos puedan ser posicionados fácilmente.
+*/
+.categoria {
+    background: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+    position: relative; /* Relativo para anclar elementos */
+}
+
+/*
+  Cuadrícula de ítems:
+  - Uso de Flexbox para organizar los elementos.
+  - Adaptación dinámica con "flex-wrap" para dispositivos más pequeños.
+  - Eliminación del estilo predeterminado de lista (<ul>).
+*/
+.items-grid {
+    display: flex; /* Flexbox */
+    gap: 1rem;
+    flex-wrap: wrap; /* Permite que los elementos se adapten */
+    padding: 0;
+    list-style: none; /* Quita los estilos por defecto del <ul> */
+}
+
+/*
+  Estilo para cada ítem:
+  - Tamaño relativo para una cuadrícula de tres columnas.
+  - Fondo gris claro con bordes redondeados y espaciado interno.
+*/
+.item {
+    flex: 1 1 calc(33.333% - 1rem); /* Relativo: 3 columnas */
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+/*
+  Imagen dentro del ítem:
+  - Escalabilidad para adaptarse al ancho disponible.
+*/
+.item img {
+    width: 100%; /* Escalabilidad */
+    height: auto;
+    margin-top: 1rem;
+}
+
+/* BOTÓN "MÁS" */
+
+/*
+  Botón flotante dentro de la categoría:
+  - Posicionado en la esquina inferior derecha del contenedor.
+  - Fondo azul y texto blanco para destacar.
+  - Bordes redondeados para consistencia en diseño.
+*/
+.btn-mas {
+    position: absolute; /* Absoluto */
+    bottom: 10px;
+    right: 10px;
+    padding: 0.5rem 1rem;
+    background-color: #007aff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* FOOTER */
+
+/*
+  Pie de página:
+  - Texto centrado con fondo negro y texto blanco.
+*/
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #000;
+    color: white;
+}
+
+/* ACCESIBILIDAD */
+
+/*
+  Variables CSS para accesibilidad:
+  - Base de fuente accesible definida en el elemento raíz.
+*/
+:root {
+    font-size: 16px; /* Base accesible */
+}
+
+/*
+  Títulos secundarios:
+  - Tamaño relativo para mejor escalabilidad.
+*/
+h2 {
+    font-size: 1.75rem; /* Relativo */
+}
+
+/*
+  Párrafos:
+  - Tamaño de fuente moderado y escalable.
+*/
+p {
+    font-size: 1rem; /* Relativo */
+}

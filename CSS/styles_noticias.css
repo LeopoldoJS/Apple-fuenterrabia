@@ -1,0 +1,282 @@
+/*
+  Nombre: [Tu Nombre]
+  Fecha: [Fecha Actual]
+  Descripción: Estilos para una página con noticias, columnas de contenido,
+               eventos y un pie de página.
+*/
+
+/* GENERAL */
+
+/*
+  Esto elimina los márgenes y rellenos que vienen por defecto en los elementos.
+  También ajusta el tamaño para que sea más fácil manejar los bordes.
+*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*
+  Aquí definimos cómo se verá todo el texto de la página.
+  Elegí una fuente sencilla y puse un fondo gris claro para que no sea tan pesado a la vista.
+*/
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.5;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* HEADER */
+
+/*
+  Este es el encabezado de la página. Tiene un fondo negro y el texto es blanco
+  para que resalte. También alineo los elementos con Flexbox.
+*/
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #000;
+    color: white;
+}
+
+/*
+  Aquí se define el tamaño del título principal que aparece en el encabezado.
+*/
+.header-title {
+    font-size: 2rem;
+}
+
+/*
+  La lista de enlaces del menú no tiene viñetas y los elementos están alineados
+  en una sola fila con espacio entre ellos.
+*/
+.nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+}
+
+/*
+  Los enlaces del menú no tienen subrayado y son blancos para que combinen con el fondo negro.
+*/
+.nav ul li a {
+    text-decoration: none;
+    color: white;
+}
+
+/* MAIN */
+
+/*
+  Este es el contenedor principal donde va todo el contenido.
+  Tiene algo de espacio alrededor para que no se vea tan apretado.
+*/
+.main {
+    padding: 2rem;
+}
+
+/* NOTICIAS DE LA SEMANA */
+
+/*
+  Aquí van las noticias destacadas. Les puse un fondo blanco para que resalten
+  y les di bordes redondeados para que se vean más elegantes.
+*/
+.noticias-semana {
+    margin-bottom: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+}
+
+/*
+  Las noticias están organizadas en una lista sin viñetas.
+*/
+.noticias-semana ul {
+    list-style: none;
+    padding: 0;
+}
+
+/*
+  Cada noticia tiene un espacio debajo para que no se vean todas amontonadas,
+  y el texto está centrado.
+*/
+.noticias-semana ul li {
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+/*
+  Las imágenes de las noticias están centradas y tienen un tamaño máximo para
+  que no sean demasiado grandes.
+*/
+.noticias-semana img {
+    max-width: 300px;
+    display: block;
+    margin: 0 auto;
+}
+
+/* COLUMNAS */
+
+/*
+  Estas son las dos columnas principales: una para novedades y otra para rumores.
+  Las columnas están separadas y tienen un diseño similar al de las noticias.
+*/
+.columnas {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.novedades,
+.rumores {
+    flex: 1;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+}
+
+/* EVENTOS DEL MES */
+
+/*
+  Esta es la sección para los eventos. El diseño es parecido al de las noticias,
+  pero con una cuadrícula de eventos que se adapta a diferentes tamaños de pantalla.
+*/
+.eventos-mes {
+    background-color: white;
+    border-radius: 10px;
+    padding: 1.5rem;
+    border: 1px solid #ddd;
+}
+
+/*
+  Los eventos están organizados en dos columnas. Si la pantalla es pequeña,
+  los eventos se ajustan automáticamente.
+*/
+.eventos {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    padding: 0;
+}
+
+/*
+  Cada evento tiene un diseño sencillo, con bordes y un fondo gris claro.
+*/
+.evento {
+    flex: 1 1 calc(50% - 1.5rem);
+    background: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+}
+
+/*
+  Las imágenes de los eventos son un poco más grandes para destacar.
+*/
+.evento img {
+    max-width: 400px;
+    display: block;
+    margin: 10px auto;
+}
+
+/* FOOTER */
+
+/*
+  Este es el pie de página. Tiene el mismo diseño que el encabezado: fondo negro
+  con texto blanco, y el texto está centrado.
+*/
+.footer {
+    text-align: center;
+    padding: 1rem;
+    background-color: #000;
+    color: white;
+}
+
+/* ACCESIBILIDAD */
+
+/*
+  Aquí definimos un tamaño base para la fuente. Esto ayuda a que el sitio sea más accesible
+  y fácil de escalar en diferentes dispositivos.
+*/
+:root {
+    font-size: 16px;
+}
+
+/*
+  Los títulos secundarios tienen un tamaño más grande para destacar las secciones.
+*/
+h2 {
+    font-size: 1.75rem;
+}
+
+/*
+  Los párrafos y las etiquetas tienen un tamaño estándar para que sean fáciles de leer.
+*/
+p {
+    font-size: 1rem;
+}
+
+/* ESTILOS GENERALES PARA IMÁGENES */
+
+/*
+  Las imágenes en toda la página se ajustan al tamaño de su contenedor
+  y tienen bordes redondeados para un diseño más limpio.
+*/
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin: 10px 0;
+}
+.news-link {
+  display: block;
+  text-decoration: none; /* Elimina el subrayado */
+  color: inherit; /* Usa el color del texto actual */
+  border: 1px solid transparent;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.news-link:hover {
+  border: 1px solid #070419;
+  background-color: #f0f8ff;
+}
+/* Estilos generales del acordeón */
+.accordion {
+  margin-top: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+/* Estilo del encabezado del acordeón */
+.accordion-header {
+  background-color: #007aff; /* Color azul acorde al diseño */
+  color: white;
+  padding: 1rem;
+  cursor: pointer; /* Indica interactividad */
+  font-weight: bold;
+}
+
+/* Contenido del acordeón, inicialmente oculto */
+.accordion-content {
+  display: none; /* Ocultar contenido por defecto */
+  padding: 1rem;
+  background-color: #f9f9f9; /* Fondo gris claro */
+  border-top: 1px solid #ddd;
+}
+
+/* Estilos adicionales para imágenes en el contenido del acordeón */
+.accordion-content img {
+  max-width: 100%; /* Imagen adaptativa */
+  height: auto;
+  margin-top: 1rem;
+  border-radius: 5px; /* Bordes redondeados */
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Noticias y Novedades</title>
+    <link rel="stylesheet" href="CSS/styles_noticias.css">
+    <link rel="stylesheet" href="CSS/accordion.css">
+</head>
+<body>
+    <header class="header">
+        <h1 class="header-title">Noticias y Novedades</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="contact_form.html">Contacto</a></li>
+                <li><a href="dispositivos.html">Dispositivos</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main">
+        <!-- Sección de Noticias de la Semana -->
+        <section class="noticias-semana">
+            <h2>Noticias de esta Semana</h2>
+            <ul>
+                <li>
+                    <a href="https://www.apple.com/es/newsroom/2024/10/apple-introduces-m4-pro-and-m4-max/" target="_blank" class="news-link">
+                        <img src="./Contenido multimedia/Apple-M4-chip-series-hero_big.jpg.large.jpg" alt="Imagen de Chips M4">
+                        <p>Apple presenta los chips M4 Pro y M4 Max: Apple ha lanzado sus nuevos chips M4 Pro y M4 Max,
+                        que prometen mejorar el rendimiento de sus dispositivos.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://cincodias.elpais.com/smartlife/smart-tv/2024-11-18/apple-valora-lanzar-televisores-propios.html" target="_blank" class="news-link">
+                        <img src="./Contenido multimedia/Apple-TV-4K-hero-221018.jpg.og.jpg" alt="Imagen de Apple TV">
+                        <p>Apple está valorando lanzar su propio televisor: Según Bloomberg, Apple está considerando 
+                        lanzar un televisor propio, lo que podría ser una gran adición a su línea de productos.</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="https://www.bolsamania.com/noticias/empresas/apple-supera-huawei-cuota-mercado-china-ventas-estancan--17807622.html" target="_blank" class="news-link">
+                        <img src="./Contenido multimedia/china.jpg" alt="Imagen de mercado China">
+                        <p>Apple supera a Huawei en cuota de mercado en China: A pesar de que las ventas de Apple se han
+                        estancado, ha logrado superar a Huawei en cuota de mercado en China.</p>
+                    </a>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Sección de Novedades y Rumores -->
+        <section class="columnas">
+            <article class="novedades">
+                <h2>Novedades</h2>
+                <p>Otra novedad reciente de Apple es su plan de lanzar un dispositivo de hogar inteligente que
+                     compita con el Echo Hub de Amazon. Este nuevo dispositivo, que se puede colgar en la pared 
+                     y estará disponible en colores negro y plateado, está diseñado para integrarse perfectamente
+                      con otros productos Apple y mejorar la experiencia del hogar inteligente.</p>
+            </article>
+            <article class="rumores">
+                <h2>Rumores</h2>
+                <p>Una de las últimas novedades sobre el iPhone es que Apple está trabajando en un nuevo modelo, el iPhone SE 4, 
+                que se espera tenga un rendimiento mejorado y características avanzadas, manteniendo el diseño compacto y asequible
+                que los usuarios de la serie SE aprecian.</p>
+            </article>
+        </section>
+
+        <!-- Sección de Eventos del Mes con Acordeón -->
+        <section class="eventos-mes">
+            <h2>Eventos Relevantes del Mes</h2>
+            <!-- Acordeón 1 -->
+            <article class="accordion">
+                <header class="accordion-header" onclick="toggleAccordion(this)">
+                    WWDC 2024 (5 de junio de 2024)
+                </header>
+                <section class="accordion-content">
+                    <p>Apple presentó iOS 18, iPadOS 18, macOS Sequoia, y watchOS 11. También se anunciaron nuevos dispositivos como el MacBook Air con chip M3 y el Mac Studio con chip M2 Max o M2 Ultra. Este evento destacó por la introducción de capacidades avanzadas de IA en los sistemas operativos.</p>
+                    <img src="./Contenido multimedia/wwdc-2024-everything-announced-at-apples-developer-conferenc_qjcv.jpg" alt="Imagen Evento 1">
+                </section>
+            </article>
+            <!-- Acordeón 2 -->
+            <article class="accordion">
+                <header class="accordion-header" onclick="toggleAccordion(this)">
+                    Evento de septiembre de 2024 (11 de septiembre de 2024)
+                </header>
+                <section class="accordion-content">
+                    <p>Apple lanzó el iPhone 16 y el iPhone 16 Pro, ambos con chips A18 y cámara avanzada de 48 MP. También se presentaron el Apple Watch Series 10 y los AirPods 4 mejorados. Este evento se enfocó en mejorar el rendimiento y la funcionalidad de los dispositivos con nuevas tecnologías y diseños.</p>
+                    <img src="./Contenido multimedia/sep apple.jpeg" alt="Imagen Evento 2">
+                </section>
+            </article>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <a>Leopoldo Suarez</a>
+        <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" 
+            target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" 
+            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" 
+            src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" 
+            alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+             src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
+    </footer>
+
+    <script>
+        function toggleAccordion(header) {
+            const content = header.nextElementSibling;
+            const isVisible = content.style.display === 'block';
+            content.style.display = isVisible ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

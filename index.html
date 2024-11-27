@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--
+        Configuración básica del documento:
+        - meta charset: Define la codificación UTF-8 para soportar caracteres especiales como acentos.
+        - meta viewport: Permite que el diseño sea adaptable para dispositivos móviles.
+        - title: Define el título que aparecerá en la pestaña del navegador.
+        - link: Conecta la hoja de estilos CSS para personalizar el diseño del sitio.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Apple</title>
+    <link rel="stylesheet" href="CSS/styles.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <!--
+            Cabecera del sitio web:
+            - h1: Título principal de la página que identifica la tienda.
+            - nav: Barra de navegación con enlaces a otras páginas.
+        -->
+        <h1 class="header-title">AppleStore Fuenterrabía</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="dispositivos.html">Dispositivos</a></li>
+                <li><a href="contact_form.html">Contacto</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main">
+        <!-- Sección principal de contenido -->
+        <section class="main-content">
+            <!-- Bloque: Sobre Nosotros -->
+            <article class="content-box">
+                <!--
+                    Etiqueta "article" utilizada para representar contenido independiente y relacionado.
+                -->
+                <h2>Sobre Nosotros</h2>
+                <p>
+                    AppleStore Fuenterrabía es la tienda oficial de Apple en tu ciudad. Ofrecemos la última tecnología en dispositivos Apple, 
+                    incluyendo iPhones, iPads, MacBooks y Apple Watches...
+                </p>
+                <!-- Imagen representativa -->
+                <img src="./Contenido multimedia/Apple logo in black and gray.png" alt="Imagen de presentación" class="imagen-reducida">
+            </article>
+
+            <!-- Bloque: Último Modelo -->
+            <article class="content-box">
+                <h2>Último Modelo</h2>
+                <p>
+                    IPhone 16 Pro Max: Pantalla Super Retina XDR de 6.9 pulgadas. Chip A18 Pro con CPU de 6 núcleos...
+                </p>
+                <img src="./Contenido multimedia/Apple-iPhone-16-Pro-hero-geo-240909_inline.jpg.large.jpg" alt="Imagen del último modelo" class="imagen-reducida">
+            </article>
+
+            <!-- Bloque: Sistema Operativo -->
+            <article class="content-box">
+                <h2>Sistema Operativo</h2>
+                <p>ios 18
+                    iOS 18 trae una serie de mejoras y nuevas funcionalidades, incluyendo una personalización más profunda de la pantalla de inicio y el Centro de Control,
+                     una renovación completa de la app Fotos, y la introducción de Apple Intelligence, que utiliza modelos generativos para ofrecer asistencia personalizada
+                      y relevante mientras protege la privacidad del usuario.</p>
+                <!-- Enlace externo para más detalles -->
+                <a href="https://www.apple.com/es/ios/ios-18/" class="btn">Leer más</a>
+            </article>
+        </section>
+
+        <!-- Noticias -->
+        <aside class="news-section">
+            <!--
+                Sección de noticias:
+                - h2: Encabezado que describe el contenido de la sección.
+                - ul: Lista de noticias con imágenes y descripciones.
+            -->
+            <h2>Últimas Noticias</h2>
+            <ul>
+                <!-- Primera noticia -->
+                <li>
+                    <img src="./Contenido multimedia/Apple-M4-chip-series-hero_big.jpg.large.jpg" alt="Noticia 1" class="news-img">
+                    <p>Apple presenta los chips M4 Pro y M4 Max...</p>
+                </li>
+                <!-- Segunda noticia -->
+                <li>
+                    <img src="./Contenido multimedia/Teknofilo-063.jpg" alt="Noticia 2" class="news-img">
+                    <p>El nuevo MacBook Pro incorpora los chips de la gama M4 y Apple Intelligence...</p>
+                </li>
+                <!-- Tercera noticia -->
+                <li>
+                    <img src="./Contenido multimedia/mac-mini-og-202410.jpeg" alt="Noticia 3" class="news-img">
+                    <p>El nuevo Mac mini de Apple es más potente y más mini que nunca...</p>
+                </li>
+                <!-- Cuarta noticia -->
+                <li>
+                    <img src="./Contenido multimedia/500_333.jpeg" alt="Noticia 4" class="news-img">
+                    <p>Apple Intelligence ya está disponible en el iPhone, iPad y Mac...</p>
+                </li>
+            </ul>
+        </aside>
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <!--
+            Información adicional sobre autoría y licencias.
+        -->
+            <a>Leopoldo Suarez</a>
+        <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" 
+            target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" 
+            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" 
+            src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" 
+            alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+             src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
+    </footer>
+</body>
+</html>

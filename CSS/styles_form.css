@@ -1,0 +1,194 @@
+/*
+  Nombre: [Tu Nombre]
+  Fecha: [Fecha Actual]
+  Descripción: Estilos básicos para una página con cabecera, contenido principal, enlaces sociales y pie de página.
+*/
+
+/* RESET BÁSICO */
+
+/*
+  Eliminamos márgenes y rellenos predeterminados del navegador.
+  Configuramos una fuente estándar y un color de fondo claro para toda la página.
+*/
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+}
+
+/* CABECERA */
+
+/*
+  La cabecera tiene un fondo negro y texto blanco para destacar.
+  Se utiliza un relleno interno para espaciado vertical.
+*/
+header {
+  background-color: #000;
+  color: white;
+  padding: 10px 0;
+}
+
+/*
+  Navegación principal con diseño de Flexbox.
+  - Nombre de la página alineado a la izquierda.
+  - Menú de navegación alineado a la derecha.
+*/
+.navigation {
+  display: flex;
+  justify-content: space-between; /* Distribución horizontal */
+  align-items: center; /* Centrado vertical */
+  padding: 0 20px;
+}
+
+/*
+  El título de la página tiene un tamaño mayor y es negrita para destacarlo.
+*/
+.page-title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+/*
+  Lista de navegación:
+  - Se eliminan estilos predeterminados.
+  - Los elementos se disponen horizontalmente con espacio entre ellos.
+*/
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  gap: 20px; /* Espaciado entre enlaces */
+}
+
+/*
+  Los elementos de la lista se muestran en línea para navegación horizontal.
+*/
+.navigation ul li {
+  display: inline;
+}
+
+/*
+  Los enlaces de navegación son blancos y negrita.
+  Se eliminan subrayados para un diseño limpio.
+*/
+.navigation ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* REDES SOCIALES */
+
+/*
+  Lista de enlaces sociales:
+  - Se eliminan viñetas y márgenes predeterminados.
+*/
+.social-links {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/*
+  Los elementos de la lista tienen un pequeño margen vertical.
+*/
+.social-links li {
+  margin: 10px 0;
+}
+
+/*
+  Los enlaces sociales están diseñados para alinearse con íconos:
+  - Texto negro y negrita.
+  - Alineación horizontal con íconos.
+*/
+.social-links a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  display: flex;
+  align-items: center; /* Centrado vertical con íconos */
+}
+
+/*
+  Los íconos sociales tienen un tamaño fijo y un margen derecho para separarlos del texto.
+*/
+.social-links img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+/* ESTILO PRINCIPAL */
+
+/*
+  Diseño de Flexbox para la sección principal:
+  - El contenido principal (formulario) ocupa el 60% del ancho.
+  - La sección lateral ocupa el 30%.
+*/
+main {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
+
+/*
+  Sección de formulario: ocupa la mayor parte del ancho.
+*/
+.form-section {
+  width: 60%;
+}
+
+/*
+  Sección lateral (aside): ocupa menos espacio para contenido complementario.
+*/
+aside {
+  width: 30%;
+}
+
+/* PIE DE PÁGINA */
+
+/*
+  Pie de página con diseño sencillo:
+  - Fondo negro, texto blanco.
+  - Texto centrado y relleno interno para espaciado.
+*/
+footer {
+  background-color: #000;
+  color: white;
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* ENLACES DESTACADOS */
+
+/*
+  Enlaces con estilo destacado para direcciones de correo:
+  - Color naranja y negrita para resaltar.
+*/
+.highlight-email {
+  color: #ff6600;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+/*
+  Estilo de interacción (hover):
+  - Subrayado y cambio de color para dar retroalimentación visual.
+*/
+.highlight-email:hover {
+  text-decoration: underline;
+  color: #ff4500;
+}
+/* 
+    Estilos para íconos de redes sociales flotantes:
+    - Se alinea el ícono a la izquierda y se deja espacio para que el texto fluya a su derecha.
+*/
+.social-icon {
+  float: left; /* Alinea el ícono a la izquierda */
+  margin-right: 10px; /* Espaciado entre el ícono y el texto */
+  width: 24px; /* Tamaño del ícono */
+  height: 24px; /* Tamaño del ícono */
+}

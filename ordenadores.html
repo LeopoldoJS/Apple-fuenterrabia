@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!--
+        Configuración básica del documento:
+        - meta charset: Define la codificación de caracteres en UTF-8 para soportar caracteres especiales como acentos.
+        - meta viewport: Configura el diseño para adaptarse a dispositivos móviles.
+        - title: Define el título que aparecerá en la pestaña del navegador.
+        - link: Vincula la hoja de estilos externa para personalizar el diseño.
+    -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordenadores</title>
+    <link rel="stylesheet" href="CSS/ordenadores.css">
+</head>
+<body>
+    <!-- Encabezado -->
+    <header class="header">
+        <!--
+            Cabecera de la página:
+            - h1: Título principal del sitio.
+            - nav: Barra de navegación con enlaces a otras secciones del sitio.
+        -->
+        <h1 class="header-title">Ordenadores</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="index.html">Página Principal</a></li>
+                <li><a href="noticias.html">Noticias</a></li>
+                <li><a href="contact_form.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Contenido Principal -->
+    <main class="main">
+        <!-- Sección: Ordenadores de Escritorio -->
+        <section class="ordenadores-escritorio">
+            <!--
+                Encabezado para la categoría "Ordenadores de Escritorio":
+                - h2: Define el título de la sección.
+            -->
+            <h2>Ordenadores de Escritorio</h2>
+            <ul>
+                <!-- Producto: iMac -->
+                <li class="producto">
+                    <figure>
+                        <!-- Imagen del producto -->
+                        <img src="./Contenido multimedia/imac-og-202410.jpeg" alt="Ordenador Oficina" class="producto-img">
+                        <!-- Título del producto -->
+                        <figcaption>IMAC</figcaption>
+                    </figure>
+                    <article>
+                        <!-- Descripción del producto -->
+                        <p>
+                            La iMac es una computadora todo-en-uno con una pantalla Retina 4.5K...
+                        </p>
+                        <!-- Precio del producto -->
+                        <span class="precio">Precio: $1500</span>
+                    </article>
+                </li>
+                <!-- Producto: Mac Mini -->
+                <li class="producto">
+                    <figure>
+                        <img src="./Contenido multimedia/mac-mini-og-202410.jpeg" alt="MACMINI" class="producto-img">
+                        <figcaption>MACMINI</figcaption>
+                    </figure>
+                    <article>
+                        <p>
+                            La Mac mini es una computadora de escritorio compacta y potente...
+                        </p>
+                        <span class="precio">Precio: $450</span>
+                    </article>
+                </li>
+                <!-- Producto: Mac Pro -->
+                <li class="producto">
+                    <figure>
+                        <img src="./Contenido multimedia/id-mac-pro-2019.jpg" alt="Ordenador Diseño" class="producto-img">
+                        <figcaption>MAC Pro</figcaption>
+                    </figure>
+                    <article>
+                        <p>
+                            El Mac Pro es una estación de trabajo de alto rendimiento equipada con el chip Apple M2 Ultra...
+                        </p>
+                        <span class="precio">Precio: $2000</span>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Sección: Laptops -->
+        <section class="laptops">
+            <!--
+                Encabezado para la categoría "Laptops":
+                - h2: Define el título de la sección.
+            -->
+            <h2>Laptops</h2>
+            <ul>
+                <!-- Producto: MacBook Pro -->
+                <li class="producto">
+                    <figure>
+                        <img src="./Contenido multimedia/Apple-MacBook-Pro-M2-Pro-and-M2-Max-hero-230117_Full-Bleed-Image.jpg.large.jpg" alt="Laptop Pro" class="producto-img">
+                        <figcaption>Pro</figcaption>
+                    </figure>
+                    <article>
+                        <p>Para profesionales que necesitan potencia y portabilidad.</p>
+                        <span class="precio">Precio: $1800</span>
+                    </article>
+                </li>
+                <!-- Producto: MacBook Air 2024 -->
+                <li class="producto">
+                    <figure>
+                        <img src="./Contenido multimedia/macbookair.jpg" alt="Laptop Air 2024" class="producto-img">
+                        <figcaption>Air 2024</figcaption>
+                    </figure>
+                    <article>
+                        <p>Ligera y con gran autonomía, perfecta para uso diario.</p>
+                        <span class="precio">Precio: $1200</span>
+                    </article>
+                </li>
+                <!-- Producto: MacBook Air 2022 -->
+                <li class="producto">
+                    <figure>
+                        <img src="./Contenido multimedia/111867_SP869-2022-macbook-air-m2-colors.png" alt="Laptop Air 2022" class="producto-img">
+                        <figcaption>Air 2022</figcaption>
+                    </figure>
+                    <article>
+                        <p>Rendimiento confiable con diseño minimalista.</p>
+                        <span class="precio">Precio: $1000</span>
+                    </article>
+                </li>
+            </ul>
+        </section>
+
+        <!-- Opiniones de Clientes -->
+        <section class="opiniones">
+            <!--
+                Sección de opiniones de clientes:
+                - h2: Encabezado de la sección.
+                - p: Opiniones individuales de los clientes.
+            -->
+            <h2>Opiniones de Clientes</h2>
+            <p>“Excelente servicio y productos de calidad” - Cliente A</p>
+            <p>“Muy satisfecho con mi compra” - Cliente B</p>
+        </section>
+    </main>
+
+    <!-- Pie de Página -->
+    <footer class="footer">
+        <!--
+            Información adicional en el pie de página:
+            - p: Texto sobre la autoría o licencias.
+            - a: Botón para regresar a la sección de dispositivos.
+        -->
+        <a>Leopoldo Suarez</a>
+        <p xmlns:cc="http://creativecommons.org/ns#" >This work is licensed under <a href="https://creativecommons.org/licenses/by-nc/4.0/?ref=chooser-v1" 
+            target="_blank" rel="license noopener noreferrer" style="display:inline-block;">CC BY-NC 4.0<img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" 
+            src="https://mirrors.creativecommons.org/presskit/icons/cc.svg?ref=chooser-v1" alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;" 
+            src="https://mirrors.creativecommons.org/presskit/icons/by.svg?ref=chooser-v1" 
+            alt=""><img style="height:22px!important;margin-left:3px;vertical-align:text-bottom;"
+             src="https://mirrors.creativecommons.org/presskit/icons/nc.svg?ref=chooser-v1" alt=""></a></p>
+        <a href="dispositivos.html" class="btn-volver">Volver</a>
+    </footer>
+</body>
+</html>
